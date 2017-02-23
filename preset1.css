@@ -79,7 +79,7 @@ table.gsc-search-box td input#gsc-i-id1.gsc-input {
   text-transform: none !important;
 }
 #titulouniversidade {
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
 }
 #sp-menu-principal-wrapper {
   background: #88A89D !important;
