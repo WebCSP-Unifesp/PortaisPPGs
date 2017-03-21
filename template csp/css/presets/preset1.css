@@ -439,6 +439,10 @@ div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img {
 .fancybox-title-inside-wrap {
   display: none !important;
 }
+/* customizações Núcleo Web CSP */
+/* Sites de PPGs */
+
+
 /****** Customização calendario - Juliotak ******/
 #flatcal_minical .full_cal_link td {background: none !important;}
 .flatcal_main_t {border:0 !important;}
@@ -454,4 +458,20 @@ div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img {
 .flatcal_daycell a {font-size: .7rem !important;}
 .flatcal_busylink {color: #555 !important; text-decoration: none !important; border: 1px solid #fad1ba !important; border-radius: 20px !important; padding: 3px !important;}
 .flatcal_busylink:hover {border-color: #e36826 !important;}
+
+
+/* top menu */
+#sp-menu {margin:0;}
+
+/* slider */
+.carousel .carousel-caption {background: none !important;bottom:40%;}
+.carousel .carousel-caption h2 {text-align: center !important;font-size:2.2rem;text-shadow: 2px 2px 0 #000;}
+.carousel .carousel-caption p {text-align: center !important;font-size:1.3rem;}
+.carousel-indicators {margin: 0 0 0 48% !important; bottom: 15px !important; top: auto !important; right: auto !important;}
+
+/* colunas - listas de conteúdos */
+h4.newsflash-title {font-size: 1.3rem; line-height: 1.3;margin-bottom: .5rem;}
+.mod-content .newsflash p {font-style: italic;color:#666;line-height: 1.4;}
+.mod-content .newsflash a.readmore {margin-bottom: 1rem; display: inline-block;}
+#sp-user2 h4.newsflash-title {color: #AD5D49;}
 
