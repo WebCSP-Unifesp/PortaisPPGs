@@ -439,3 +439,19 @@ div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img {
 .fancybox-title-inside-wrap {
   display: none !important;
 }
+/****** Customização calendario - Juliotak ******/
+#flatcal_minical .full_cal_link td {background: none !important;}
+.flatcal_main_t {border:0 !important;}
+.flatcal_main_t tr:nth-child(odd), 
+.flatcal_main_t tr:nth-child(even),
+.mod_events_latest_table tr:nth-child(odd),
+.mod_events_latest_table tr:nth-child(even) {background: none !important;border-bottom: 1px solid #dadada !important;}
+#flatcal_minical .flatcal_navbar {background: none !important;border:0 !important;}
+.flatcal_month_label a {font-size: 1.19rem; font-weight:bold; color: #e36826 !important;}
+.flatcal_weekdays {font-weight: bold !important; font-size: .9rem !important;}
+#flatcal_minical .flatcal_todaycell a {border: 1px solid #e36826 !important; background-color: #e36826 !important;}
+#flatcal_minical .flatcal_todaycell a:hover {background-color: #fff !important;}
+.flatcal_daycell a {font-size: .7rem !important;}
+.flatcal_busylink {color: #555 !important; text-decoration: none !important; border: 1px solid #fad1ba !important; border-radius: 20px !important; padding: 3px !important;}
+.flatcal_busylink:hover {border-color: #e36826 !important;}
+

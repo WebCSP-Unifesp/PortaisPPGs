@@ -1372,14 +1372,19 @@ submit.social:hover {
   margin-bottom: 10px;
 }
 #sp-user3 h3 {
-  border-color: #355E85;
+  border-color: #267c54;
   border-bottom-style: solid;
   border-width: 0 0 3px;
 }
 #sp-user4 h3 {
-  border-color: #267c54;
+  border-color: #e36826;
   border-bottom-style: solid;
   border-width: 0 0 3px;
+}
+#sp-user4 a,
+#sp-user4 h3 {
+  color: #e36826;
+  font-weight: 700;
 }
 #sp-user4 .gkTabsContainer {
   height: 350px !important;
