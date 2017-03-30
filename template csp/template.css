@@ -532,12 +532,15 @@ a:hover {
 }
 .entry-meta ul.actions li.print-icon a::before {
   content: "\f02f";
+  margin-right: 4px;
 }
 .entry-meta ul.actions li.email-icon a::before {
   content: "\f003";
+  margin-right: 4px;
 }
 .entry-meta ul.actions li.edit-icon a::before {
   content: "\f044";
+  margin-right: 4px;
 }
 .entry-meta ul.actions li a {
   font-family: FontAwesome;

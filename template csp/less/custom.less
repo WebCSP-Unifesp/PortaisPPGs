@@ -1,4 +1,4 @@
-/* customizações Núcleo Web CSP */
+/******* customizações Núcleo Web CSP *******/
 /* Sites de PPGs */
 
 /* top slider */
@@ -6,17 +6,28 @@
 
 
 /****** Customização calendario - Juliotak ******/
-#flatcal_minical .full_cal_link td {background: none !important;}
-.flatcal_main_t {border:0 !important;}
-.flatcal_main_t tr:nth-child(odd), 
-.flatcal_main_t tr:nth-child(even),
-.mod_events_latest_table tr:nth-child(odd),
-.mod_events_latest_table tr:nth-child(even) {background: none !important;border-bottom: 1px solid #dadada !important;}
-#flatcal_minical .flatcal_navbar {background: none !important;border:0 !important;}
+#flatcal_minical {
+  .full_cal_link td {background: none !important;}
+  .flatcal_navbar {background: none !important;border:0 !important;}
+  .flatcal_todaycell {
+    a {border: 1px solid #e36826 !important; background-color: #e36826 !important;}
+    a:hover {background-color: #fff !important;}
+  }
+}
+.flatcal_main_t {
+  border:0 !important;
+  .flatcal_main_t {
+    tr:nth-child(odd),
+    tr:nth-child(even) {background: none !important;border-bottom: 1px solid #dadada !important;}
+  }
+}
+.mod_events_latest_table {
+  tr:nth-child(odd),
+  tr:nth-child(even) {background: none !important;border-bottom: 1px solid #dadada !important;}
+}
+
 .flatcal_month_label a {font-size: 1.19rem; font-weight:bold; color: #e36826 !important;}
 .flatcal_weekdays {font-weight: bold !important; font-size: .9rem !important;}
-#flatcal_minical .flatcal_todaycell a {border: 1px solid #e36826 !important; background-color: #e36826 !important;}
-#flatcal_minical .flatcal_todaycell a:hover {background-color: #fff !important;}
 .flatcal_daycell a {font-size: .7rem !important;}
 .flatcal_busylink {color: #555 !important; text-decoration: none !important; border: 1px solid #fad1ba !important; border-radius: 20px !important; padding: 3px !important;}
 .flatcal_busylink:hover {border-color: #e36826 !important;}
@@ -26,9 +37,13 @@
 #sp-menu {margin:0;}
 
 /* slider */
-.carousel .carousel-caption {background: none !important;bottom:40%;}
-.carousel .carousel-caption h2 {text-align: center !important;font-size:2.2rem;text-shadow: 2px 2px 0 #000;}
-.carousel .carousel-caption p {text-align: center !important;font-size:1.3rem;}
+.carousel {
+  .carousel-caption {
+    background: none !important;bottom:40%;
+    h2 {text-align: center !important;font-size:2.2rem;text-shadow: 2px 2px 0 #000;}
+    p {text-align: center !important;font-size:1.3rem;color:#fff !important;}
+  }
+}
 .carousel-indicators {margin: 0 0 0 48% !important; bottom: 15px !important; top: auto !important; right: auto !important;}
 
 /* colunas - listas de conteúdos */
@@ -38,22 +53,69 @@ h4.newsflash-title {font-size: 1.3rem; line-height: 1.3;margin-bottom: .5rem;}
 #sp-user2 h4.newsflash-title {color: #AD5D49;}
 
 /* Shortcuts */
- 
+#atalhos {margin-top: 2rem;}
 
 /* EVO Frontpage - noticias */
-#sp-ttl-recentes h2, #sp-ttl-docentes h2, #sp-ttl-artigos h2 {margin-top: 2rem; padding-top: 2rem;border-bottom: 2px solid #267c54;}
-.evofrontpage-default .head,
-.evofrontpage-default .evofp-table-cell-body {border: none !important;}
-.evofrontpage-default .evofp-img-centered , 
-.evofrontpage-default .evofp-table-cell-inner .evofp-img-left {border-radius: 0px !important;}
-.evofrontpage-default .title {font-weight: bold; line-height: 1.3;}
-.evofrontpage-default .evofp-table-cell p {padding: 0 !important; font-style: italic;}
-#sp-position5 .evofrontpage-default .evofp-table-cell p {clear: both;}
+#sp-ttl-recentes h2, 
+#sp-ttl-docentes h2, 
+#sp-ttl-artigos h2,
+#sp-position8 h2 {margin-top: 2rem; padding-top: 2rem;border-bottom: 2px solid #267c54;}
+.evofrontpage-default {
+  .head,
+  .evofp-table-cell-body {border: none !important;margin-bottom: 0px !important;}
+  .evofp-img-centered, 
+  .evofp-table-cell-inner .evofp-img-left {border-radius: 0px !important;}
+  .title {font-weight: bold; line-height: 1.3;}
+  .evofp-table-cell p {padding: 0 !important; font-style: italic;}
+}
 .evofp-table-cell-inner {border-bottom: 1px solid #afcabd;}
 #sp-position4 .evofp-table-cell-inner {border-bottom: none;}
+.evofrontpage-default .evofp-table-cell p {clear: both; padding: 0 !important;}
 
 
-/* EVO Frontpage - Artigos */
-#sp-position6 .evofrontpage-default .title {font-size: 120%;}
+/* EVO Frontpage - Aside */
+#sp-right .module:first-child {margin-top: 3.2rem;}
+#sp-right .header {font-size:150%;}
+#sp-right .evofrontpage-default .title {font-size: 120% !important; color: #666 !important; padding-left: 20px; text-indent: -22px;}
+#sp-right .evofrontpage-default .title:before {font-family: FontAwesome; content: "\f061"; margin-right: 7px; color: #ea8a00;}
 
 
+/* slider docentes */
+.flexslider {margin:0 !important;}
+#icecarousel152 .slides > div {margin: 0 4.4rem !important; text-align: center;}
+
+.djslider .slider-container a .dj-image {position: absolute; left:10%;}
+.slide-desc-bg-default {background: RGBA(230,230,230,0.65) !important;}
+.slide-desc-text-default {color: #000 !important;}
+.slide-desc-text-default .slide-title {
+  color: #000 !important;
+    a {color: #000 !important;}
+}
+
+
+/* Breadcrumb */
+#sp-breadcrumb-wrapper {margin-top: 1em;}
+
+
+/* Artigo */
+article .entry-meta.muted {background: none; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede;}
+article .page-header {margin: 0; border-bottom: none;}
+article p {font-size: 1.2em; line-height: 1.6;}
+.tags li a {background: #fff !important; border: 1px solid; padding: 5px 8px; border-radius: 13px;}
+
+@media (max-width: 800px) {
+  #sp-header-wrapper #sp-logo {max-width: 30%;}
+  #sp-universidade {margin: 1rem 0 0 1rem;}
+  #sp-universidade #titulouniversidade {font-family: Cinzel, "Sans Serif"; font-size: 1.5em; color: #fff;}
+  .carousel {min-height: auto !important;}
+  .carousel-inner, 
+  .carousel-inner > .item {min-height: auto !important;}
+  .carousel-indicators {right: 1rem !important;}
+  .carousel .carousel-caption {
+    bottom:0;
+    position: relative;
+    background: rgba(0, 0, 0, 0.75) !important;
+    h2 {font-size: 120%; margin: 0; text-shadow: 1px 2px 0 #000;}
+    p {font-size: 100%;}
+  }
+}
