@@ -1,64 +1,880 @@
+//EPM
+/******************************************************************************************************************************************
+* DEPARTAMENTOS - UNIFESP
+* DESENVOLVIDO POR: Grupo Web/DCI
+*
+* Versão: 1.2
+*
+* Data de criação: 23/05/2016
+* Data de modificação: 12/07/2016
+*
+* Caros amigos. Favor, inserirem suas alterações de CSS apenas abaixo marca no rodapé dessa página, para evitar que atualizações no css
+* apaguem suas alterações invdividuais.
+*
+* Obrigado
+* Grupo Web - UNIFESP
+******************************************************************************************************************************************/
+
+/********************************************** Configurações importadas de outros arquivos **********************************************/
+
+//Arquivo less contendo as variáveis de cores da paleta padrão da UNIFESP
+@import "cores";
+
+//Fonte Lato do Google Fonts.
+//@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic);
+
+//Fonte Cinzel do Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+
+/**************************************************** INÍCIO ESTILOS GERAIS PARA TODAS AS PÁGINAS ****************************************/
+
+body{
+    //font-size: 1.000em; //Define a fonte padrão do corpo da página. Medida em "em" equivalente a 14px;
+    //font-size: 14px; //Define a fonte padrão do corpo da página. Medida em "em" equivalente a 14px;
+    line-height: 20px;
+}
+
+//Cor padrão para todo os textos
+body/*, h1, h2, h3, h4, h5, h6*/{
+    //font-family: 'Lato', sans-serif !important;
+    color: @texto;
+}
+
+//Cores dos títulos
+h1, h2, h3, h4, h5, h6{
+
+    /* BAIXADA SANTISTA
+    color: @bs-escuro-dois;
+    */
+
+    /* DIADEMA
+    color: @diad-escuro-dois;*/
+    
+
+    /* EPM    */
+    color: @sp-epm-escuro-dois;
+
+
+    /* EPE
+    color: @sp-epe-escuro-dois;
+    */
+
+    /* GUARULHOS
+    color: @gua-escuro-dois;
+    */
+
+    /* OSASCO
+    color: @osa-escuro-dois;
+    */
+
+    /*SÃO JOSÉ DOS CAMPOS
+    color: @sjc-escuro-dois;
+    */
+
+    /* ZONA LESTE
+    color: @sp-zl-escuro-dois;
+*/
+
+}
+
+
+//Cores dos links
+a{
+    //Cor padrão
+    color: @verde-unifesp;
+}
+
+//Cores dos hovers dos links
+a:hover{
+  color: @verde-medio-um;
+}
+
+/**************************************************** FIM ESTILOS GERAIS PARA TODAS AS PÁGINAS *******************************************/
+
+/******************************************** INÍCIO CORES DE FUNDO COM O NOME DO DEPARTAMENTO E RODAPÉ DA PÁGINA ************************/
+
+//Descomentar de acordo com a cor do layout do campus desejado
+
+#sp-nome-do-departamento, #sp-rodape{
+
+    /* BAIXADA SANTISTA
+    background-color: @bs-escuro-tres;
+    */
+
+    /* DIADEMA
+    background-color: @diad-escuro-tres;*/
+    
+
+    /* EPM*/
+    background-color: #4B7C6C;
+    
+
+    /* EPE
+    background-color: @sp-epe-escuro-tres;
+    */
+
+    /* GUARULHOS
+    background-color: @gua-escuro-tres;
+    */
+
+    /* OSASCO
+    background-color: @osa-escuro-tres;
+    */
+
+    /*SÃO JOSÉ DOS CAMPOS
+    background-color: @sjc-escuro-tres;
+    */
+
+    /* ZONA LESTE
+    background-color: @sp-zl-escuro-tres;
+*/
+
+}
+
+//Alinhamento do texto, tamanho e cor da fonte
+#sp-rodape{
+    padding-top: 5px;
+    p{
+        color: #fff;
+        font-size: 1.000em;
+        line-height: 120%;
+        text-align: center;
+    }
+}
+/********************************************** FIM CORES DE FUNDO COM O NOME DO DEPARTAMENTO E RODAPÉ DA PÁGINA *************************/
+
+
+/**************************************************************** INÍCIO MENU PRINCIPAL **************************************************/
+
+#sp-menu-principal{
+
+    /* BAIXADA SANTISTA
+    background-color: @bs-claro-tres;
+    */
+
+    /* DIADEMA
+    background-color: @diad-claro-tres;*/
+    
+
+    /* EPM*/
+    background-color: #C3D3CE;
+    
+
+    /* EPE
+    background-color: @sp-epe-claro-tres;
+    */
+
+    /* GUARULHOS
+    background-color: @gua-claro-tres;
+    */
+
+    /* OSASCO
+    background-color: @osa-claro-tres;
+    */
+
+    /*SÃO JOSÉ DOS CAMPOS
+    background-color: @sjc-claro-tres;
+    */
+
+    /* ZONA LESTE
+    background-color: @sp-zl-claro-tres;
+*/
+
+
+    //Alinha o menu principal à esquerda (o padrão do template é à direita)
+    .sp-megamenu-parent{
+        float: left;
+    }
+
+    //Ajusta a altura da linha do menu principal
+    .sp-megamenu-parent > li > a{
+        line-height: 40px;
+
+        //Cor dos títulos do menu principal.
+        /* BAIXADA SANTISTA
+        color: @bs-escuro-dois;
+        */
+
+        /* DIADEMA
+        color: @diad-escuro-dois;*/
+        
+
+        /* EPM*/
+        color: @sp-epm-escuro-dois;
+        
+
+        /* EPE
+        color: @sp-epe-escuro-dois;
+        */
+
+        /* GUARULHOS
+        color: @gua-escuro-dois;
+        */
+
+        /* OSASCO
+        color: @osa-escuro-dois;
+        */
+
+        /*SÃO JOSÉ DOS CAMPOS
+        color: @sjc-escuro-dois;
+        */
+
+        /* ZONA LESTE
+        color: @sp-zl-escuro-dois;
+*/
+
+    }
+
+    //Hover do menu principal.
+    .sp-megamenu-parent > li > a:hover{
+        //background-color: @verde-medio-quatro;
+
+        /* BAIXADA SANTISTA
+        background-color: @bs-medio-um;
+        */
+
+        /* DIADEMA
+        background-color: @diad-medio-um;*/
+        
+
+        /* EPM*/
+        background-color: @sp-epm-medio-um;
+        
+
+        /* EPE
+        background-color: @sp-epe-medio-um;
+        */
+
+        /* GUARULHOS
+        background-color: @gua-medio-um;
+        */
+
+        /* OSASCO
+        background-color: @osa-medio-um;
+        */
+
+        /*SÃO JOSÉ DOS CAMPOS
+        background-color: @sjc-medio-um;
+        */
+
+        /* ZONA LESTE
+        background-color: @sp-zl-medio-um;
+*/
+
+    }
+
+    //Retira a "seta pra baixo", indicando que há sub-itens no menu principal
+    .sp-megamenu-parent > li.sp-has-child > a::after{
+        display: none;
+    }
+
+}
+
+//Tamanho da fonte, cor e capitalização dos títulos dos submenus.
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item > a.sp-group-title{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.857em;
+}
+
+//Cor link e do fundo dos títulos do menu em hover.
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item > a.sp-group-title:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+//Tamanho da fonte, cor e capitalização dos ítens dos submenus.
+.sp-megamenu-parent .sp-mega-group .sp-mega-group-child li.sp-menu-item > a{
+    text-transform: inherit;
+    font-size: 0.857em;
+    color: @texto;
+}
+
+//Cor da fonte e do fundo dos ítens dos submenus quando no hover.
+.sp-megamenu-parent .sp-mega-group .sp-mega-group-child li.sp-menu-item > a:hover, .sp-megamenu-parent .sp-dropdown li.sp-menu-item > a:hover{
+    background-color: #f5f5f5;
+    color: #999;
+}
+
+//Cor de fundo do título do menu ativo no momento.
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item.active > a:not(.sp-group-title){
+    background-color: #f5f5f5;
+}
+
+//Cor do link do título do menu ativo no momento quando no hover.
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item.active > a:hover:not(.sp-group-title){
+    color: #999;
+}
+
+/**************************************************************** FIM MENU PRINCIPAL *****************************************************/
+
+
+/************************************************************ INÍCIO BREADCRUMBS *********************************************************/
+
+//Retira cor de fundo do breadcrumb
+.breadcrumb{
+    background-color: #fff;
+    margin-bottom: 0px;
+}
+
+ol.breadcrumb li{
+    color: #777;
+}
+
+
+.breadcrumb > li + li::before{
+    content: "\00bb";
+}
+
+/************************************************************ FIM BREADCRUMBS ************************************************************/
+
+
+/************************************************************* INÍCIO COLUNAS NEWSFLASH **************************************************/
+
+//Tamanho e família da fonte e espaçamento entre linhas do texto
+.newsflash p{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.857em;
+    line-height: 120%; //Espaçamento entre linhas
+}
+
+//Ajusta a margem inferior dos títulos dos primeiros artigos mostrados em cada coluna do módulo Newsflash de modo que fique o mesmo espaçamento
+//entre o título e o texto de introdução dos artigos.
+.newsflash h4:first-child {
+    margin-bottom: 4px;
+}
+
+/* Tracejado e espaçamento que separam as notícias que aparecem nas colunas do módulo Newsflash */
+.newsflash h4:not(:first-child) {
+    border-top: 1px dotted #ccc;
+    margin: 3px 0px  4px;
+    padding: 3px 0px 0px ;
+}
+
+//Borda inferior (sublinhado/linha) dos títulos das colunas da página principal
+#sp-coluna1 h3.sp-module-title, #sp-coluna2 h3.sp-module-title, #sp-coluna3 h3.sp-module-title, #sp-coluna4 h3.sp-module-title, {
+
+    //Cor da fonte
+    /* BAIXADA SANTISTA
+    border-bottom: 3px solid @bs-escuro-dois;
+    */
+
+    /* DIADEMA
+    border-bottom: 3px solid @diad-escuro-dois;*/
+    
+
+    /* EPM*/
+    border-bottom: 3px solid @sp-epm-escuro-dois;
+    
+
+    /* EPE
+    border-bottom: 3px solid @sp-epe-escuro-dois;
+    */
+
+    /* GUARULHOS
+    border-bottom: 3px solid @gua-escuro-dois;
+    */
+
+    /* OSASCO
+    border-bottom: 3px solid @osa-escuro-dois;
+    */
+
+    /*SÃO JOSÉ DOS CAMPOS
+    border-bottom: 3px solid @sjc-escuro-dois;
+    */
+
+    /* ZONA LESTE
+    border-bottom: 3px solid @sp-zl-escuro-dois;
+*/
+
+
+    //Cor da fonte
+    /* BAIXADA SANTISTA
+    color: @bs-escuro-dois;
+    */
+
+    /* DIADEMA
+    color: @diad-escuro-dois;*/
+    
+
+    /* EPM*/
+    color: @sp-epm-escuro-dois;
+    
+
+    /* EPE
+    color: @sp-epe-escuro-dois;
+    */
+
+    /* GUARULHOS
+    color: @gua-escuro-dois;
+    */
+
+    /* OSASCO
+    color: @osa-escuro-dois;
+    */
+
+    /*SÃO JOSÉ DOS CAMPOS
+    color: @sjc-escuro-dois;
+    */
+
+    /* ZONA LESTE
+    color: @sp-zl-escuro-dois;
+*/
+
+}
+
+//Cor e intensidade da fonte dos títulos dos módulos Newsflash,
+#sp-coluna1 h4.newsflash-title > a, #sp-coluna2 h4.newsflash-title  > a, #sp-coluna3 h4.newsflash-title  > a, #sp-coluna4 h4.newsflash-title  > a{
+    font-weight: bold !important;
+    margin-bottom: 10px;
+
+    /* BAIXADA SANTISTA
+    color: @bs-escuro-dois;
+    */
+
+    /* DIADEMA
+    color: @diad-escuro-dois;*/
+    
+
+    /* EPM*/
+    color: @sp-epm-escuro-dois;
+    
+
+    /* EPE
+    color: @sp-epe-escuro-dois;
+    */
+
+    /* GUARULHOS
+    color: @gua-escuro-dois;
+    */
+
+    /* OSASCO
+    color: @osa-escuro-dois;
+    */
+
+    /*SÃO JOSÉ DOS CAMPOS
+    color: @sjc-escuro-dois;
+    */
+
+    /* ZONA LESTE
+    color: @sp-zl-escuro-dois;
+*/
+
+}
+
+//Cor do link e tamanho da fonte do "Leia mais..."
+a.readmore{
+    //color: @sp-epm-escuro-dois;
+    font-size: 0.714em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    /* BAIXADA SANTISTA
+    color: @bs-escuro-um;
+    */
+
+    /* DIADEMA
+    color: @diad-escuro-tres;*/
+    
+
+    /* EPM*/
+    color: @sp-epm-escuro-dois;
+    
+
+    /* EPE
+    color: @sp-epe-escuro-dois;
+    */
+
+    /* GUARULHOS
+    color: @gua-escuro-dois;
+    */
+
+    /* OSASCO
+    color: @osa-escuro-dois;
+    */
+
+    /*SÃO JOSÉ DOS CAMPOS
+    color: @sjc-escuro-dois;
+    */
+
+    /* ZONA LESTE
+    color: @sp-zl-escuro-dois;
+*/
+
+}
+
+/************************************************************* FIM COLUNAS NEWSFLASH *****************************************************/
+
+
+/************************************************************* INÍCIO ARTIGOS ************************************************************/
+
+//
+.entry-header{
+    margin-bottom: 15px;
+}
+
+//Cor dos títulos dos artigos
+.entry-header h2, .entry-header h2 a{
+    font-weight: bold;
+
+    /* BAIXADA SANTISTA
+    color: @bs-escuro-um;
+    */
+
+    /* DIADEMA
+    color: @diad-escuro-dois;*/
+    
+
+    /* EPM*/
+    color: @sp-epm-escuro-dois;
+    
+
+    /* EPE
+    color: @sp-epe-escuro-dois;
+    */
+
+    /* GUARULHOS
+    color: @gua-escuro-dois;
+    */
+
+    /* OSASCO
+    color: @osa-escuro-dois;
+    */
+
+    /*SÃO JOSÉ DOS CAMPOS
+    color: @sjc-escuro-dois;
+    */
+
+    /* ZONA LESTE
+    color: @sp-zl-escuro-dois;
+*/
+
+}
+
+//Ajusta o espaçamento entre linhas do conteúdo do artigo.
+article.item.item-page > div > p{
+    line-height: 120%; //Espaçamento entre linhas
+}
+
+//Ajusta a margem inferior entre o artigo e o rodapé
+article.item.item-page{
+    margin-bottom: 20px;
+}
+
+
+//Oculta o título do menu que é exibido junto com o artigo.
+.page-header{
+    display: none;
+}
+
+/************************************************************* FIM ARTIGOS ***************************************************************/
+
+
+/************************************************************* INÍCIO MAIN BODY **********************************************************/
+
+//Retira todos os paddings do container
+#sp-main-body{
+    padding: 0;
+}
+
+/************************************************************* FIM MAIN BODY *************************************************************/
+
+
+/******************************************************* INÍCIO DAS TABELAS **************************************************************/
+
+//Configuração geral das tabelas.
+table{
+    border-collapse:            separate; //Transformada a borda dupla em simples
+    border-bottom-left-radius:  10px;     //"arredonda" a borda inferior esquerda da tabela
+    border-bottom-right-radius: 10px;     //"arredonda" a borda inferior direita da tabela
+}
+
+//Configuraqção da legenda da tabela, como cor do texto, bordas e cor de fundo, conforme cada modelo de site
+caption{
+    color: #fff !important; //altera a cor do texto para branco.
+
+    border-top-left-radius:10px  !important;
+    border-top-right-radius:10px !important;
+    padding:10px                 !important;
+
+    /* BAIXADA SANTISTA
+    background-color: @bs-escuro-um;
+    */
+
+    /* DIADEMA
+    background-color: @diad-escuro-tres;*/
+    
+
+    /* EPM*/
+    background-color: @sp-epm-escuro-dois;
+    
+
+    /* EPE
+    background-color: @sp-epe-escuro-dois;
+    */
+
+    /* GUARULHOS
+    background-color: @gua-escuro-dois;
+    */
+
+    /* OSASCO
+    background-color: @osa-escuro-dois;
+    */
+
+    /*SÃO JOSÉ DOS CAMPOS
+    background-color: @sjc-escuro-dois;
+    */
+
+    /* ZONA LESTE
+    background-color: @sp-zl-escuro-dois;
+*/
+
+}
+
+//Preenche a cor de fundo (ESCURO) das linhas impares conforme o layout de cada campus/pró-reitoria
+tr:nth-child(even) td {
+
+    /* BAIXADA SANTISTA
+    background-color: @bs-claro-um;
+    */
+
+    /* DIADEMA
+    background-color: @diad-claro-tres;*/
+    
+
+    /* EPM*/
+    background-color: @sp-epm-claro-dois;
+    
+
+    /* EPE
+    background-color: @sp-epe-claro-dois;
+    */
+
+    /* GUARULHOS
+    background-color: @gua-claro-dois;
+    */
+
+    /* OSASCO
+    background-color: @osa-claro-dois;
+    */
+
+    /*SÃO JOSÉ DOS CAMPOS
+    background-color: @sjc-claro-dois;
+    */
+
+    /* ZONA LESTE
+    background-color: @sp-zl-claro-dois;
+*/
+
+}
+
+//Preenche a cor de fundo (CLARO) das linhas pares conforme o layout de cada campus/pró-reitoria
+tr:nth-child(odd) td{
+
+    background-color: @cinza-unifesp-claro;
+}
+
+//Arredonda a borda inferior esquerda da tabela em 10px;
+tr:last-child td:first-child{
+    border-bottom-left-radius:         10px;
+    -moz-border-radius-bottomleft:     10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-radius:                     0 0 0 0.6em;
+}
+
+//Arredonda a borda inferior direita da tabela em 10px;
+tr:last-child td:last-child {
+    border-bottom-right-radius:         10px;
+    -moz-border-radius-bottomright:     10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-radius:                      0 0 0.6em 0;
+}
+
+// Espaçamento das células das tabelas
+td{
+    padding:10px;
+}
+
+/********************************************************** FIM DAS TABELAS **************************************************************/
+
+/* BOTÕES */
+
+//Botão "Pesquisar" do resultado da busca avançada
+.btn-primary, .sppb-btn-primary {
+    background-color: #98b3ab;
+    background-image: linear-gradient(to bottom,#98B3A2,#98b3ab);
+    background-repeat: repeat-x;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+    line-height: 1.250em; //Equivalente a 20px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+
+/*************************************************** INÍCIO REDES SOCIAIS ****************************************************************/
+
+//Altera o ícone do Facebook padrão do Helix 3 para o "facebook-official"
+.fa-facebook::before{
+    content: "\f230";
+}
+
+//Altera o ícone do Twitter padrão do Helix 3 para o square
+.fa-twitter::before{
+    content: "\f081";
+}
+
+//Altera o tamanho padrão dos ícones do Helix 3
+.fa-facebook::before,
+.fa-twitter::before,
+.fa-google-plus::before,    //G+
+.fa-pinterest::before,      //Pinterest
+.fa-youtube::before,        //Youtube
+.fa-linkedin::before,       //Linkedin
+.fa-dribbble::before,       //Dribbble
+.fa-behance::before,        //Behance
+.fa-flickr::before,         //Flicker
+.fa-vk::before,             //VK
+.fa-skype::before           //Skype
+{
+    font-size: 1.5em;
+}
+
+//Aumenta a margem superior dos ícones (FontAwesome) das redes sociais
+ul.social-icons{
+    margin-top: 4px;
+}
+
+//Altera a cor dos ícones (FontAwesome) das redes sociais
+ul.social-icons > li a{
+
+    /* BAIXADA SANTISTA
+    color: @bs-escuro-um;
+    */
+
+    /* DIADEMA
+    color: @diad-escuro-um;*/
+    
+
+    /* EPM*/
+    color: @sp-epm-escuro-um;
+    
+
+    /* EPE
+    color: @sp-epe-escuro-um;
+    */
+
+    /* GUARULHOS
+    color: @gua-escuro-um;
+    */
+
+    /* OSASCO
+    color: @osa-escuro-um;
+    */
+
+    /*SÃO JOSÉ DOS CAMPOS
+    color: @sjc-escuro-um;
+    */
+
+    /* ZONA LESTE
+    color: @sp-zl-escuro-dois;
+*/
+
+}
+
+//Altera a cor de cover dos ícones (FontAwesome) das redes sociais
+ul.social-icons > li a:hover{
+
+    /* BAIXADA SANTISTA
+    color: @bs-medio-um;
+    */
+
+    /* DIADEMA
+    color: @diad-medio-um;*/
+    
+
+    /* EPM */
+    color: @sp-epm-medio-um;
+   
+
+    /* EPE
+    color: @sp-epe-medio-um;
+    */
+
+    /* GUARULHOS
+    color: @gua-medio-um;
+    */
+
+    /* OSASCO
+    color: @osa-medio-um;
+    */
+
+    /* SÃO JOSÉ DOS CAMPOS
+    color: @sjc-medio-um;
+    */
+
+    /* ZONA LESTE
+    color: @sp-zl-medio-dois;
+*/
+
+}
+
+/****************************************************** FIM REDES SOCIAIS ****************************************************************/
+
+
+/************************************************* INÍCIO BANDEIRAS GTRANSLATE ***********************************************************/
+
+//Mostra as bandeiras e alinha no meio da linha
+div#sp-bandeiras img{
+    display: inherit; //Isso que faz as bandeiras aparecerem
+    margin-top: 10px;
+}
+
+/**************************************************** FIM BANDEIRAS GTRANSLATE ***********************************************************/
+
 /******* customizações Núcleo Web CSP *******/
 /* Sites de PPGs */
+.instance-id {
+  display:flex;
+    .epm-logo {
+      padding: 1rem 0;
+        margin: 0 1rem;
+    }
+    p {
+    line-height: 0.75 !important;
+      margin-top: 0 !important;
+        .academic-unity {font-size: 40%;}
+        .department-name a {font-size: 65% !important; color:#fff !important;}
+  }
+}
+
+#sp-departamento-wrapper {
+  background: #4B7C6C;
+}
 
 /* top slider */
-#sp-slider-wrapper {background: #e2e4e3;}
-
-
-/****** Customização calendario - Juliotak ******/
-#flatcal_minical {
-  .full_cal_link td {background: none !important;}
-  .flatcal_navbar {background: none !important;border:0 !important;}
-  .flatcal_todaycell {
-    a {border: 1px solid #e36826 !important; background-color: #e36826 !important;}
-    a:hover {background-color: #fff !important;}
-  }
-}
-.flatcal_main_t {
-  border:0 !important;
-  .flatcal_main_t {
-    tr:nth-child(odd),
-    tr:nth-child(even) {background: none !important;border-bottom: 1px solid #dadada !important;}
-  }
-}
-.mod_events_latest_table {
-  tr:nth-child(odd),
-  tr:nth-child(even) {background: none !important;border-bottom: 1px solid #dadada !important;}
-}
-
-.flatcal_month_label a {font-size: 1.19rem; font-weight:bold; color: #e36826 !important;}
-.flatcal_weekdays {font-weight: bold !important; font-size: .9rem !important;}
-.flatcal_daycell a {font-size: .7rem !important;}
-.flatcal_busylink {color: #555 !important; text-decoration: none !important; border: 1px solid #fad1ba !important; border-radius: 20px !important; padding: 3px !important;}
-.flatcal_busylink:hover {border-color: #e36826 !important;}
-
-
-/* top menu */
-#sp-menu {margin:0;}
+/*#sp-slider {background: #e2e4e3;}*/
 
 /* slider */
 .carousel {
-  .carousel-caption {
+  margin-top: 0px !important;
+    .carousel-caption {
     background: none !important;bottom:40%;
-    h2 {text-align: center !important;font-size:2.2rem;text-shadow: 2px 2px 0 #000;}
-    p {text-align: center !important;font-size:1.3rem;color:#fff !important;}
+    h4 {text-align: center !important;font-size:2.2rem;text-shadow: 2px 2px 0 #000;
+      a {font-weight: bold; color: #fff; font-size: 2.2em;}
+    }
+    p {text-align: center !important;font-size:1.9rem;line-height:1.6;color:#fff !important;
+      a {color: #fff;}
+    }
   }
 }
-.carousel-indicators {margin: 0 0 0 48% !important; bottom: 15px !important; top: auto !important; right: auto !important;}
+.carousel-indicators {top: auto !important;}
+.carousel-control {line-height: 21px !important;margin-top:0 !important;}
 
-/* colunas - listas de conteúdos */
-h4.newsflash-title {font-size: 1.3rem; line-height: 1.3;margin-bottom: .5rem;}
-.mod-content .newsflash p {font-style: italic;color:#666;line-height: 1.4;}
-.mod-content .newsflash a.readmore {margin-bottom: 1rem; display: inline-block;}
-#sp-user2 h4.newsflash-title {color: #AD5D49;}
-
-/* Shortcuts */
-#atalhos {margin-top: 2rem;}
 
 /* EVO Frontpage - noticias */
 #sp-ttl-recentes h2, 
 #sp-ttl-docentes h2, 
 #sp-ttl-artigos h2,
+#sp-ttl-agenda h2,
 #sp-position8 h2 {margin-top: 2rem; padding-top: 2rem;border-bottom: 2px solid #267c54;}
 .evofrontpage-default {
   .head,
@@ -66,49 +882,58 @@ h4.newsflash-title {font-size: 1.3rem; line-height: 1.3;margin-bottom: .5rem;}
   .evofp-img-centered, 
   .evofp-table-cell-inner .evofp-img-left {border-radius: 0px !important;}
   .title {font-weight: bold; line-height: 1.3;}
-  .evofp-table-cell p {padding: 0 !important; font-style: italic;}
+  .evofp-table-cell p {padding: 0 !important; margin:5px 0; clear: both; font-style: italic;}
 }
 .evofp-table-cell-inner {border-bottom: 1px solid #afcabd;}
 #sp-position4 .evofp-table-cell-inner {border-bottom: none;}
-.evofrontpage-default .evofp-table-cell p {clear: both; padding: 0 !important;}
+.evofrontpage-default .evofp-table-cell p {}
 
 
-/* EVO Frontpage - Aside */
-#sp-right .module:first-child {margin-top: 3.2rem;}
-#sp-right .header {font-size:150%;}
-#sp-right .evofrontpage-default .title {font-size: 120% !important; color: #666 !important; padding-left: 20px; text-indent: -22px;}
-#sp-right .evofrontpage-default .title:before {font-family: FontAwesome; content: "\f061"; margin-right: 7px; color: #ea8a00;}
-
-
-/* slider docentes */
-.flexslider {margin:0 !important;}
-#icecarousel152 .slides > div {margin: 0 4.4rem !important; text-align: center;}
-
-.djslider .slider-container a .dj-image {position: absolute; left:10%;}
-.slide-desc-bg-default {background: RGBA(230,230,230,0.65) !important;}
-.slide-desc-text-default {color: #000 !important;}
-.slide-desc-text-default .slide-title {
-  color: #000 !important;
-    a {color: #000 !important;}
-}
-.bt-cs .bt-inner img {outline: 0 !important;} 
-
-
-/* Breadcrumb */
-#sp-breadcrumb-wrapper {margin-top: 1em;}
+/* Slider Docentes */
+.bt-cs .bt-inner img {outline: none !important;}
 
 
 /* Artigo */
 article .entry-meta.muted {background: none; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede;}
 article .page-header {margin: 0; border-bottom: none;}
-article p {font-size: 1.2em; line-height: 1.6;}
+article p {font-size: 1.2em; line-height: 1.6 !important;}
 .tags li a {background: #fff !important; border: 1px solid; padding: 5px 8px; border-radius: 13px;}
+.breadcrumb {padding-left:0px !important;}
+.article-info {margin: 3rem 0 0 0 !important;border-top: 1px solid #dadada !important;border-bottom: 1px solid #dadada !important;padding: 3px 0 !important;}
 
+/* Idioma */
+#sp-idioma {
+transform: translateY(50%) !important; 
+}
+.bt-cs .bt-inner img {outline: 0 !important;} 
+
+/* Docentes */
+#contact {color: #267C54;font-size: 80%;padding: 4px 28px;background: url(/images/icons/email_icon.png) no-repeat;}
+
+
+/* Calendario DPCalendar Module */
+.dp-container {
+  .fc-header-title {color:#e36826;}
+  tr:nth-child(even) td,
+  tr:nth-child(odd) td {background: none;}
+    .fc-border-separate tr.fc-last th, 
+    .fc-border-separate tr.fc-last td {border-radius:0;}
+}
+.dp-upcoming-group {margin-bottom: 10px !important;border-left: none !important;}
+.dp-upcoming-group p:before {font-family: FontAwesome;content: "\f061";margin-right: 7px;color: #ea8a00;}
+.dp-upcoming-group p {font-size: 85%;}
+.dpc-upcoming-event-link {margin-left: 23px !important; display: inline-block; font-weight:bold !important; font-size:1.6rem !important;}
+#sp-agenda .sp-module:nth-child(2) {margin-top: 23px;}
+
+
+
+/* Brakepoints */
 @media (max-width: 800px) {
-  #sp-header-wrapper #sp-logo {max-width: 30%;}
-  #sp-universidade {margin: 1rem 0 0 1rem;}
-  #sp-universidade #titulouniversidade {font-family: Cinzel, "Sans Serif"; font-size: 1.5em; color: #fff;}
+  .instance-name p {line-height: .7 !important;}
+  .department-name {font-size: 60% !important;}
   .carousel {min-height: auto !important;}
+    #sp-slider {padding: 0;}
+    #sp-slider .container {padding:0;}
   .carousel-inner, 
   .carousel-inner > .item {min-height: auto !important;}
   .carousel-indicators {right: 1rem !important;}
@@ -116,7 +941,10 @@ article p {font-size: 1.2em; line-height: 1.6;}
     bottom:0;
     position: relative;
     background: rgba(0, 0, 0, 0.75) !important;
-    h2 {font-size: 120%; margin: 0; text-shadow: 1px 2px 0 #000;}
+    h4 {font-size: 100%; margin: 0; text-shadow: 1px 2px 0 #000;}
     p {font-size: 100%;}
   }
+
 }
+
+
