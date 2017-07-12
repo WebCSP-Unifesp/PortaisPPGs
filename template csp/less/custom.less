@@ -831,6 +831,14 @@ div#sp-bandeiras img{
 /**************************************************** FIM BANDEIRAS GTRANSLATE ***********************************************************/
 
 /******* customizações Núcleo Web CSP *******/
+/* accesskeys - acessibilidade */
+.topbar {margin-top:0;}
+.accesskeys p {text-align: right;}
+.accesskeys a {color: rgba(255,255,255,.7);font-size: 75%;margin-left: 2.5em;}
+.accesskeys a:hover {color: rgb(255,255,255);}
+.accesskeys a span {border: 1px solid rgba(255,255,255,.7);padding: 2px 4px;}
+
+
 /* Sites de PPGs */
 .instance-id {
     display:flex;
@@ -869,7 +877,7 @@ div#sp-bandeiras img{
 .carousel-indicators {top: auto !important;}
 .carousel-control {line-height: 21px !important;margin-top:0 !important;}
 
-
+#sp-atalhos {margin-top:2em;}
 
 /* EVO Frontpage - noticias */
 #sp-ttl-recentes h2, 
@@ -887,7 +895,7 @@ div#sp-bandeiras img{
 }
 .evofp-table-cell-inner {border-bottom: 1px solid #afcabd;}
 #sp-position4 .evofp-table-cell-inner {border-bottom: none;}
-.evofrontpage-default .evofp-table-cell p {}
+.evofrontpage-default .evofp-table-cell p {padding:0 !important;margin:5px 0; clear: both; font-style: italic;}
 
 
 /* Slider Docentes */
@@ -925,7 +933,8 @@ transform: translateY(50%) !important;
 .dp-upcoming-group p:before {font-family: FontAwesome;content: "\f061";margin-right: 7px;color: #ea8a00;}
 .dp-upcoming-group p {font-size: 85%;}
 .dpc-upcoming-event-link {margin-left: 23px !important; display: inline-block; font-weight:bold !important; font-size:1.6rem !important;}
-#sp-agenda .sp-module:nth-child(2) {margin-top: 23px;}
+/*#sp-agenda .sp-module:nth-child(2) {margin-top: 23px;}*/
+#sp-agenda .sp-module {margin-top: 23px;}
 
 #dpcal-event-container {
     font-family: Lato, sans-serif;
@@ -968,7 +977,19 @@ transform: translateY(50%) !important;
 .jeventpage table.contentpaneopen td {padding: 0;}
 
 
+/* Ajuste na navegação do Carrossel */
+.flex-direction-nav .flex-next {background-position: 100% 0 !important;}
+.slide-desc, .slide-desc-box .slide-title {text-shadow: 2px 2px 0 #000 !important;}
+.flexslider {padding: 0px 0px 10px 0px !important;}
+
+
+
 /* Breakpoints */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	#offcanvas-toggler {line-height: 35px;}
+}
+
+
 @media (max-width: 800px) {
     .instance-name p {line-height: .7 !important;}
     .department-name {font-size: 105% !important;line-height:.9;}
@@ -992,11 +1013,7 @@ transform: translateY(50%) !important;
     article.item.item-page {width: 100% !important;}
 }
 
-/*Novo Carousel Superior*/
-.sp-glamour-layout h1.sp-title{
- font-size: 2.2em !important; 
- text-shadow: 2px 2px 0 #000;
-}
+
 
 /*Busca Google*/
 div.gsc-control-cse {
@@ -1060,3 +1077,5 @@ tr:nth-child(odd) td {
   border: none !important;
   background: #215a36 !important;
 }
+
+
