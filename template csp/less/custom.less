@@ -86,7 +86,7 @@ a{
 
 //Cores dos hovers dos links
 a:hover{
-  color: @verde-medio-um;
+	color: @verde-medio-um;
 }
 
 /**************************************************** FIM ESTILOS GERAIS PARA TODAS AS PÁGINAS *******************************************/
@@ -833,21 +833,21 @@ div#sp-bandeiras img{
 /******* customizações Núcleo Web CSP *******/
 /* Sites de PPGs */
 .instance-id {
-  display:flex;
+	display:flex;
     .epm-logo {
-      padding: 1rem 0;
-        margin: 0 1rem;
+    	padding: 1rem 0;
+      	margin: 0 1rem;
     }
     p {
-    line-height: 0.75 !important;
-      margin-top: 0 !important;
+		line-height: 0.75 !important;
+   		margin-top: 0 !important;
         .academic-unity {font-size: 40%;}
         .department-name a {font-size: 65% !important; color:#fff !important;}
-  }
+	}
 }
 
 #sp-departamento-wrapper {
-  background: #4B7C6C;
+	background: #4B7C6C;
 }
 
 /* top slider */
@@ -855,14 +855,14 @@ div#sp-bandeiras img{
 
 /* slider */
 .carousel {
-  margin-top: 0px !important;
+	margin-top: 0px !important;
     .carousel-caption {
     background: none !important;bottom:40%;
     h4 {text-align: center !important;font-size:2.2rem;text-shadow: 2px 2px 0 #000;
-      a {font-weight: bold; color: #fff; font-size: 2.2em;}
+    	a {font-weight: bold; color: #fff; font-size: 2.2em;}
     }
     p {text-align: center !important;font-size:1.9rem;line-height:1.6;color:#fff !important;
-      a {color: #fff;}
+    	a {color: #fff;}
     }
   }
 }
@@ -886,7 +886,6 @@ div#sp-bandeiras img{
 }
 .evofp-table-cell-inner {border-bottom: 1px solid #afcabd;}
 #sp-position4 .evofp-table-cell-inner {border-bottom: none;}
-.evofrontpage-default .evofp-table-cell p {}
 
 
 /* Slider Docentes */
@@ -899,23 +898,22 @@ article .page-header {margin: 0; border-bottom: none;}
 article p {font-size: 1.2em; line-height: 1.6 !important;}
 .tags li a {background: #fff !important; border: 1px solid; padding: 5px 8px; border-radius: 13px;}
 .breadcrumb {padding-left:0px !important;}
-.article-info {margin: 3rem 0 0 0 !important;border-top: 1px solid #dadada !important;border-bottom: 1px solid #dadada !important;padding: 3px 0 !important;}
+.article-info {clear:both; margin: 3rem 0 0 0 !important;border-top: 1px solid #dadada !important;border-bottom: 1px solid #dadada !important;padding: 3px 0 !important;}
 
 /* Idioma */
 #sp-idioma {
 transform: translateY(50%) !important; 
 }
-.bt-cs .bt-inner img {outline: 0 !important;} 
 
 /* Docentes */
 #contact {color: #267C54;font-size: 80%;padding: 4px 28px;background: url(/images/icons/email_icon.png) no-repeat;}
 
 
-/* Calendario DPCalendar Module */
+/****** Calendario DPCalendar Module ******/
 .dp-container {
-  .fc-header-title {color:#e36826;}
-  tr:nth-child(even) td,
-  tr:nth-child(odd) td {background: none;}
+	.fc-header-title {color:#e36826;}
+	tr:nth-child(even) td,
+	tr:nth-child(odd) td {background: none;}
     .fc-border-separate tr.fc-last th, 
     .fc-border-separate tr.fc-last td {border-radius:0;}
 }
@@ -925,13 +923,50 @@ transform: translateY(50%) !important;
 .dpc-upcoming-event-link {margin-left: 23px !important; display: inline-block; font-weight:bold !important; font-size:1.6rem !important;}
 #sp-agenda .sp-module:nth-child(2) {margin-top: 23px;}
 
+#dpcal-event-container {
+	font-family: Lato, sans-serif;
+	.dpcal-event-container h2 a {color: #267C54;}
+}
 
 
-/* Brakepoints */
+/****** JEvents Calendar ******/
+.mod_events_latest_table td:before {font-family: FontAwesome; content:"\f061"; color: #d67900; font-size: 100%; margin-right: 6px;}
+#jevents_body tr:nth-child(odd) td,
+#jevents_body tr:nth-child(even) td,
+#sp-agenda tr:nth-child(odd) td,
+#sp-agenda tr:nth-child(even) td {
+	background: none !important; font-size: 90%;
+	strong a {font-size: 150%; font-weight: bold; color: #215A36 !}
+}
+.mod_events_latest_table td span.mod_events_latest_content,
+.mod_events_latest_table td span.event-cat {display: inline-block; padding-left: 20px;}
+
+/****** JEvents Calendar - internal pages ******/
+#jevents_body {
+	border: none; background: none;
+    .nav-items {
+    	text-align: left; 
+    	div {border: none; a:hover {background: none; border: none;}
+        }
+    }
+	.jev_toprow {display: none;}
+    .nav-items div.active a {background: none !important; color: #474747 !important; border-bottom: 2px solid #267C54;}
+    .nav-items div.active a:hover {border-left: 1px solid transparent !important; border-radius: 0;}
+    #jev_maincal.jev_listview .jev_daysnames {background: none; border: none; font-size: 1.3em; font-weight: bold;margin-top: .8em;}
+    #jev_maincal {border: none; background: none;}
+    ul.ev_ul li.ev_td_li {
+		border: none;
+        .ev_link_row {display:block; background: none; font-size: 1.2em; font-weight: bold;color: #267C54;}   
+  	}
+}
+.jeventpage table.contentpaneopen td {padding: 0;}
+
+
+/* Breakpoints */
 @media (max-width: 800px) {
-  .instance-name p {line-height: .7 !important;}
-  .department-name {font-size: 60% !important;}
-  .carousel {min-height: auto !important;}
+	.instance-name p {line-height: .7 !important;}
+	.department-name {font-size: 60% !important;}
+	.carousel {min-height: auto !important;}
     #sp-slider {padding: 0;}
     #sp-slider .container {padding:0;}
   .carousel-inner, 
@@ -947,4 +982,7 @@ transform: translateY(50%) !important;
 
 }
 
+@media (min-width: 1200px){
+	article.item.item-page {width: 100% !important;}
+}
 
