@@ -832,11 +832,16 @@ div#sp-bandeiras img{
 
 /******* customizações Núcleo Web CSP *******/
 /* accesskeys - acessibilidade */
-.topbar {margin-top:0;}
-.accesskeys p {text-align: right;}
-.accesskeys a {color: rgba(255,255,255,.7);font-size: 75%;margin-left: 2.5em;}
+.topbar {margin-top:1em;}
+.accesskeys a {color: rgba(255,255,255,.3);font-size: 75%;}
+.l-akeys a {margin-right: 2.5em;}
+.r-abtn a {margin-left: 2.5em;}
 .accesskeys a:hover {color: rgb(255,255,255);}
-.accesskeys a span {border: 1px solid rgba(255,255,255,.7);padding: 2px 4px;}
+.accesskeys a span {background: rgba(255,255,255,.2);padding: 2px 4px;}
+body.view-article .l-akeys a[accesskey="4"], .view-search .l-akeys a[accesskey="4"] {display: none;}
+
+/* Oculta ícone padrão do plugin de acessibilidade */
+div.b-acc_hide_toolbar {display: none;}
 
 
 /* Sites de PPGs */
@@ -897,6 +902,7 @@ div#sp-bandeiras img{
 #sp-position4 .evofp-table-cell-inner {border-bottom: none;}
 .evofrontpage-default .evofp-table-cell p {padding:0 !important;margin:5px 0; clear: both; font-style: italic;}
 
+span.see-all {font-size: 50%; float: right; margin-top: .7em;}
 
 /* Slider Docentes */
 .bt-cs .bt-inner img {outline: none !important;}
@@ -909,6 +915,11 @@ article p {font-size: 1.2em; line-height: 1.6 !important;}
 .tags li a {background: #fff !important; border: 1px solid; padding: 5px 8px; border-radius: 13px;}
 .breadcrumb {padding-left:0px !important;}
 .article-info {margin: 3rem 0 0 0 !important;border-top: 1px solid #dadada !important;border-bottom: 1px solid #dadada !important;padding: 3px 0 !important;}
+.articleBody li {list-style-position: inside !important;}
+
+/* lista de artigos - Ver todos */
+a.mod-articles-category-title {font-size: 150%; font-weight: bold; display: block;}
+p.mod-articles-category-introtext { font-size: 100%;}
 
 /* Idioma */
 #sp-idioma {
@@ -979,7 +990,8 @@ transform: translateY(50%) !important;
 
 /* Ajuste na navegação do Carrossel */
 .flex-direction-nav .flex-next {background-position: 100% 0 !important;}
-.slide-desc, .slide-desc-box .slide-title {text-shadow: 2px 2px 0 #000 !important;}
+.slide-desc-box .slide-title {text-shadow: 2px 2px 0 #000 !important;}
+.slide-desc{text-shadow: 1px 1px 0px rgba(0,0,0,0.6) !important;}
 .flexslider {padding: 0px 0px 10px 0px !important;}
 
 
