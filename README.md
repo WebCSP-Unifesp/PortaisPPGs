@@ -16,6 +16,7 @@ http://prototipo.sites.unifesp.br
 6) Programa de Pós-Graduação em Saúde baseada em Evidências: http://ppg.evidencias.sites.unifesp.br
 7) Programa de Pós-Graduação em Gastroenterologia: http://ppg.gastro.sites.unifesp.br
 8) Programa de Pós-Graduação em Medicina Translacional: http://ppg.medicinatranslacional.sites.unifesp.br
+9) Programa de Pós-Graduação em Otorrinolaringologia: http://ppg.otorrino.sites.unifesp.br/
 
 * 2ª Fase (2º semestre 2017):
 *Em andamento*
