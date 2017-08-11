@@ -20,9 +20,10 @@ http://prototipo.sites.unifesp.br
 
 * 2ª Fase (2º semestre 2017):
 *Em andamento*
-10) Programa de Pós-Graduação em Cardiologia
-11) Programa de Pós-Graduação em Cirurgia
-12) Programa de Pós-Graduação em Pediatria
-13) Programa de Pós-Graduação em Nutrição
-14) Programa de Pós-Graduação em Neurologia e Neurociências
-15) Programa de Pós-Graduação em Nefrologia
+10) Programa de Pós-Graduação em Cardiologia: http://ppg.cardio.sites.unifesp.br/
+11) Programa de Pós-Graduação em Cirurgia: http://ppg.cirurgia.sites.unifesp.br/
+12) Programa de Pós-Graduação em Pediatria: http://ppg.pediatria.sites.unifesp.br/
+13) Programa de Pós-Graduação em Nutrição: http://ppg.nutri.sites.unifesp.br/
+14) Programa de Pós-Graduação em Neurologia e Neurociências: http://ppg.neuro.sites.unifesp.br/
+15) Programa de Pós-Graduação em Nefrologia: http://ppg.nefro.sites.unifesp.br/
+16) Programa de Pós-Graduação em Endocrinologia:: http://ppg.endocrino.sites.unifesp.br/
